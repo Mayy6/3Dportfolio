@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     
-    <nav className={`${styles.paddindX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
 
       <div className='w-full flex justify-between itmes-center max-w-7x1 mx-auto'>
         <Link to="/" 
@@ -20,7 +20,7 @@ const Navbar = () => {
           window.scrollTo(0,0);
         }}>
         <img src = {logo} alt= "logo" className='w-20 h-20 object-contain'/>
-        <p className='text-white text-[18px] font-bold cursor-pointer'>May <span className='sm:block hidden'>| Software developer</span></p>
+        <p className='text-white text-[18px] font-bold cursor-pointer flex'>May &nbsp; <span className='sm:block hidden'>| Software developer</span></p>
         </Link>
         <ul className='"list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
@@ -46,8 +46,12 @@ const Navbar = () => {
             <li
             key={link.id}
             // make sure no space after "hover: ", otherwise it does not work
-            className={`${active===link.title? "text-white":"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
-            onClick={() => setActive(link.title)}>
+            className={`${active===link.title? "text-white":"text-secondary"} hover:text-white text-[16px] font-medium cursor-pointer`}
+            onClick={() => {
+              setToggle(!toggle);
+              setActive(link.title);
+            }
+            }>
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
