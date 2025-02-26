@@ -10,17 +10,29 @@ const Computers = () => {
   return (
     <mesh>
       {/* intensity of light(光照强度) */}
-    <hemisphereLight intensity={0.15}
+    <hemisphereLight intensity={1}
     groundColor="black"/>
-    <pointLight intensity={1}/>
-    <primitive object={computer.scene}/></mesh>
+    <pointLight intensity={3}/>
+    <spotLight 
+    position={[-20, 50, 10]}
+    angle={0.12}
+    penumbra={1}
+    intensity={3}
+    castShadow
+    shadow-mapSize={1024}
+    />
+    <primitive object={computer.scene}
+    scale={0.75}
+    position={[0,-3,-1]}
+    rotation={[-0.01, -0.2, -0.1]}
+    /></mesh>
   )
 }
 
 const ComputersCanvas = () =>{
   return(
     <Canvas 
-    frameLoop="demand"
+    frameloop="demand"
     shadows
     camera={{position:[20,3,5], fov:25}}
     gl={{preserveDrawingBuffer: true}}>
@@ -34,6 +46,7 @@ const ComputersCanvas = () =>{
       />
       <Computers />
       </Suspense>
+      <Preload all/>
     </Canvas>
   )
 }
