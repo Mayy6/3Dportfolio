@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    nocode,
+    AIprompt,
   } from "../assets";
   
   export const navLinks = [
@@ -32,7 +34,7 @@ import {
     },
     {
       id: "work",
-      title: "Work",
+      title: "Project",
     },
     {
       id: "contact",
@@ -177,12 +179,33 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "No-code generation system",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developed a full-stack web app with React, Spring Boot, and PostgreSQL, integrating JWT authentication and drag-and-drop features. Ensured code quality with JUnit and deployed via CI/CD on Render. Managed the project lifecycle and team collaboration.",
       tags: [
         {
           name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "PostgreSQL",
+          color: "green-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: nocode,
+      source_code_link: "https://github.com/Mayy6/UniProject.git",
+    },
+    {
+      name: "AI Prompt",
+      description:
+        "This project is a modern AI prompt-sharing platform with a sleek glassmorphism design. Users can create, edit, delete, and discover prompts, view profiles, search by tags, and copy prompts easily. It features Google authentication via NextAuth and is fully responsive for an optimal user experience.",
+      tags: [
+        {
+          name: "next.js",
           color: "blue-text-gradient",
         },
         {
@@ -194,51 +217,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: AIprompt,
+      source_code_link: "https://github.com/Mayy6/nextai.git",
+      
     },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };

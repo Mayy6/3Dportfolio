@@ -23,6 +23,7 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^10.0.2",
     "@react-three/fiber": "^9.0.4",
     "framer-motion": "^12.4.7",
