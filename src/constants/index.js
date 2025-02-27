@@ -110,57 +110,42 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      title: "Full Stack No-code generation system",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "July 2024-October 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led a team-based development process, ensuring seamless collaboration between frontend and backend teams.",
+        "Worked alongside team members to develop a user-friendly no-code generation system, enabling users to visualize data without writing code.",
+        "Engaged with clients to understand needs and refine system functionalities based on feedback.",
+        "Designed a scalable PostgreSQL database and implemented RESTful APIs with JWT authentication utilizing Spring Boot for backend and React for frontend.",
       ],
     },
     {
-      title: "React Native Developer",
+      title: "3D Web Developer Portfolio",
       company_name: "Tesla",
       icon: tesla,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "January 2025-February 2025",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+        "Built a 3D web portfolio using React.js, Three.js, and React Three Fiber with responsive design.",
+        "Added animations with Framer Motion to enhance user experience and interactivity.",
+        "Integrated a contact form with Email.JS for seamless communication."
+            ],
     },
     {
-      title: "Web Developer",
+      title: "Distributed TEWA Algorithm Project",
       company_name: "Shopify",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "February 2025-Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Led collaborative research and algorithm development, ensuring alignment between project objectives and real-orld distributed system constraints.",
+        "Worked with team members to design and implement distributed TEWA algorithms, enabling autonomous agents to evaluate threats and assign weapons.",
+        "Focused on asynchronous consensus, partial synchronization, and handling inconsistent threat data in adistributed system, applying Python, C, and MATLAB for algorithm development and testing."
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
   ];
   
   const testimonials = [
