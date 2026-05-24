@@ -7,6 +7,7 @@ import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
 import Chatbot from './Chatbot';
+import Certifications from './Certifications';
 
 export {
   Hero,
@@ -17,6 +18,7 @@ export {
   Works,
   Contact,
   Chatbot,
+  Certifications,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
