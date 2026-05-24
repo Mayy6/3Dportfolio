@@ -26,7 +26,7 @@ import {
     nocode,
     AIprompt,
   } from "../assets";
-  
+
   export const navLinks = [
     {
       id: "about",
@@ -41,20 +41,26 @@ import {
       title: "Contact",
     },
   ];
-  
+
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: web,
     },
-    
+    {
+      title: "React & Next.js Developer",
+      icon: mobile,
+    },
     {
       title: "Backend Developer",
       icon: backend,
     },
-    
+    {
+      title: "Cloud & DevOps",
+      icon: creator,
+    },
   ];
-  
+
   const technologies = [
     {
       name: "HTML 5",
@@ -77,10 +83,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -101,55 +103,53 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
     },
   ];
-  
+
   const experiences = [
     {
-      title: "Full Stack No-code generation system",
+      title: "Full Stack Developer Intern",
+      company_name: "CyberLab — University of Adelaide",
+      icon: meta,
+      iconBg: "#1a1a2e",
+      date: "March 2025 – June 2025",
+      points: [
+        "Built responsive React/Next.js interfaces and reusable UI components using TypeScript and Tailwind CSS, delivering consistent user experiences across devices.",
+        "Integrated RESTful APIs for transaction data, account linking and dashboard features, improving frontend performance and maintainability.",
+        "Contributed to Git workflows, code reviews and CI/CD practices in an Agile team environment, supporting reliable deployment and smooth feature delivery.",
+        "Optimised UI performance following Web Vitals best practices, reducing rendering cycles and improving overall user experience.",
+      ],
+    },
+    {
+      title: "Sales & Operations Team Member",
+      company_name: "JB Hi-Fi — Adelaide, SA",
+      icon: shopify,
+      iconBg: "#E6DEDD",
+      date: "October 2024 – Present",
+      points: [
+        "Processed customer transactions, refunds and exchanges in line with company policies, maintaining accuracy under time pressure.",
+        "Managed inventory receipts, transfers and system updates, ensuring accurate stock and transaction records.",
+        "Identified and resolved inventory discrepancies including over/short deliveries and related credit and debit adjustments.",
+        "Collaborated with sales, warehouse and management teams to coordinate stock movement and support smooth day-to-day store operations.",
+      ],
+    },
+    {
+      title: "No-Code Generation System — Team Lead",
+      company_name: "University of Adelaide",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "July 2024-October 2024",
+      date: "July 2024 – October 2024",
       points: [
-        "Led a team-based development process, ensuring seamless collaboration between frontend and backend teams.",
-        "Worked alongside team members to develop a user-friendly no-code generation system, enabling users to visualize data without writing code.",
-        "Engaged with clients to understand needs and refine system functionalities based on feedback.",
-        "Designed a scalable PostgreSQL database and implemented RESTful APIs with JWT authentication utilizing Spring Boot for backend and React for frontend.",
+        "Led a cross-functional team to design and deliver a full-stack no-code data visualisation platform.",
+        "Architected a scalable PostgreSQL database and implemented RESTful APIs with JWT authentication using Spring Boot and React.",
+        "Engaged with stakeholders to gather requirements and iterated on system features based on client feedback.",
+        "Managed the full project lifecycle from planning through CI/CD deployment on Render.",
       ],
     },
-    {
-      title: "3D Web Developer Portfolio",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "January 2025-February 2025",
-      points: [
-        "Built a 3D web portfolio using React.js, Three.js, and React Three Fiber with responsive design.",
-        "Added animations with Framer Motion to enhance user experience and interactivity.",
-        "Integrated a contact form with Email.JS for seamless communication."
-            ],
-    },
-    {
-      title: "Distributed TEWA Algorithm Project",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "February 2025-Present",
-      points: [
-        "Led collaborative research and algorithm development, ensuring alignment between project objectives and real-orld distributed system constraints.",
-        "Worked with team members to design and implement distributed TEWA algorithms, enabling autonomous agents to evaluate threats and assign weapons.",
-        "Focused on asynchronous consensus, partial synchronization, and handling inconsistent threat data in adistributed system, applying Python, C, and MATLAB for algorithm development and testing."
-      ],
-    },
-    
   ];
-  
+
   const testimonials = [
     {
       testimonial:
@@ -176,52 +176,92 @@ import {
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
-  
+
   const projects = [
     {
-      name: "No-code generation system",
+      name: "Mobile Plan & Support Platform",
       description:
-        "Developed a full-stack web app with React, Spring Boot, and PostgreSQL, integrating JWT authentication and drag-and-drop features. Ensured code quality with JUnit and deployed via CI/CD on Render. Managed the project lifecycle and team collaboration.",
+        "Full-stack retail support platform to streamline plan recommendation, activation tracking and issue escalation. Built with React + TypeScript frontend, reusable component library, Node.js/Express APIs and a PostgreSQL database.",
       tags: [
         {
-          name: "react",
+          name: "react + typescript",
           color: "blue-text-gradient",
         },
         {
-          name: "PostgreSQL",
+          name: "node/express",
           color: "green-text-gradient",
         },
         {
-          name: "restapi",
+          name: "postgresql",
           color: "pink-text-gradient",
         },
       ],
-      image: nocode,
-      source_code_link: "https://github.com/Mayy6/UniProject.git",
+      image: carrent,
+      source_code_link: "https://github.com/Mayy6",
     },
     {
-      name: "AI Prompt",
+      name: "AUS Tax Calculator",
       description:
-        "This project is a modern AI prompt-sharing platform with a sleek glassmorphism design. Users can create, edit, delete, and discover prompts, view profiles, search by tags, and copy prompts easily. It features Google authentication via NextAuth and is fully responsive for an optimal user experience.",
+        "Responsive Next.js tax calculator for Australian income tax estimation. Features tax breakdowns, offset options and bracket visualisation, built with TypeScript and Tailwind CSS, tested with Vitest.",
       tags: [
         {
           name: "next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "typescript",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "tailwind css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: jobit,
+      source_code_link: "https://github.com/Mayy6",
+    },
+    {
+      name: "Finance SaaS Platform",
+      description:
+        "Full-stack finance management app with income/expense tracking, CSV import, real-time dashboards and Plaid bank integration. Secured with Clerk auth, premium upgrades via Lemon Squeezy.",
+      tags: [
+        {
+          name: "next.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "plaid + clerk",
+          color: "green-text-gradient",
+        },
+        {
+          name: "shadcn ui",
           color: "pink-text-gradient",
         },
       ],
       image: AIprompt,
-      source_code_link: "https://github.com/Mayy6/nextai.git",
-      
+      source_code_link: "https://github.com/Mayy6",
     },
-    
+    {
+      name: "No-Code Generation System",
+      description:
+        "Full-stack web app enabling users to build data visualisations without writing code. Integrated JWT authentication, drag-and-drop features, Spring Boot backend and CI/CD deployment on Render.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "spring boot",
+          color: "green-text-gradient",
+        },
+        {
+          name: "postgresql",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: nocode,
+      source_code_link: "https://github.com/Mayy6/UniProject.git",
+    },
   ];
-  
+
   export { services, technologies, experiences, testimonials, projects };

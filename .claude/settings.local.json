@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/may/Desktop/**)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}
